@@ -1,3 +1,9 @@
+# Festifast.nl
+
+This is the react application for festifast.nl. This application was created for people to easily get their bus tickets to festivals. (https://www.festifast.nl)
+
+# `npm install browser-router`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

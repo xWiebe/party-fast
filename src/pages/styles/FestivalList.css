@@ -2,17 +2,23 @@
 
 .festivalcard-container {
   display: flex;
-  justify-content: center;
-  margin: 10px 10px;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px; /* Decreased margin */
 }
 
 .festivalcard {
   background-color: var(--primary-color);
   border: 1px solid #ccc;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  padding: 5px;
+  padding: 10px; /* Decreased padding */
   width: 400px;
   text-align: center;
+  margin-bottom: 10px; /* Added margin-bottom to create space between cards */
+}
+
+.festivalcard:last-child {
+  margin-bottom: 0; /* Remove margin-bottom for the last card */
 }
 
 .festivalcard img {
@@ -20,8 +26,6 @@
   height: auto;
   margin-bottom: 5px;
   border-radius: 8px;
-  padding: 0 10px;
-  margin-top: 10px;
 }
 
 .festivalcard p {
@@ -29,14 +33,13 @@
   line-height: 1.4;
   margin: 0;
   color: #444;
-  padding: 0;
 }
 
 .festivalcard .festivalcard-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
+  margin-bottom: 5px;
 }
 
 .festivalcard .festivalcard-title {
@@ -49,4 +52,15 @@
   font-size: 18px;
   text-align: right;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px (e.g., mobile devices) */
+  .festivalcard-container {
+    margin: 5px; /* Adjusted margin for mobile screens */
+  }
+
+  h3 {
+    margin-top: -45px;
+  }
 }
